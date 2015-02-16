@@ -976,3 +976,189 @@ Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for
 
 
 Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:35:21 -0500
+
+
+Started GET "/articles/" for ::1 at 2015-02-16 12:43:52 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-16 12:43:52 -0500
+
+
+Started GET "/articles/new" for ::1 at 2015-02-16 12:46:03 -0500
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-16 12:46:03 -0500
+
+
+Started POST "/articles" for ::1 at 2015-02-16 12:46:06 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4wrx4E0mT7TmfQUAjsg3arOrnfcXL2aJXd6MVwqMogJ5Hbp8qE0nk/+V4JYqECrFV4mRVn9fl3U8m+HLn0l2Tw==", "article"=>{"title"=>"4", "text"=>"4"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "4"], ["text", "4"], ["created_at", "2015-02-16 17:46:06.653673"], ["updated_at", "2015-02-16 17:46:06.653673"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to 
+Completed 500 Internal Server Error in 8ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/articles_controller.rb:18:in `create'
+
+
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.5ms)
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (42.7ms)
+
+
+Started POST "/articles" for ::1 at 2015-02-16 12:46:18 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4wrx4E0mT7TmfQUAjsg3arOrnfcXL2aJXd6MVwqMogJ5Hbp8qE0nk/+V4JYqECrFV4mRVn9fl3U8m+HLn0l2Tw==", "article"=>{"title"=>"4", "text"=>"4"}, "commit"=>"Save Article"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "4"], ["text", "4"], ["created_at", "2015-02-16 17:46:18.572954"], ["updated_at", "2015-02-16 17:46:18.572954"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 7ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/articles_controller.rb:18:in `create'
+
+
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/djs/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (44.7ms)
+
+
+Started POST "/articles" for ::1 at 2015-02-16 12:46:32 -0500
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4wrx4E0mT7TmfQUAjsg3arOrnfcXL2aJXd6MVwqMogJ5Hbp8qE0nk/+V4JYqECrFV4mRVn9fl3U8m+HLn0l2Tw==", "article"=>{"title"=>"4", "text"=>"4"}, "commit"=>"Save Article"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "4"], ["text", "4"], ["created_at", "2015-02-16 17:46:32.276966"], ["updated_at", "2015-02-16 17:46:32.276966"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/articles/6" for ::1 at 2015-02-16 12:46:32 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered articles/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-16 12:46:32 -0500
+
+
+Started GET "/articles/" for ::1 at 2015-02-16 12:46:36 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-16 12:46:36 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-16 12:46:36 -0500
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-16 12:46:36 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-16 12:46:36 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-16 12:46:36 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-16 12:46:36 -0500
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:46:36 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-16 12:46:36 -0500
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for ::1 at 2015-02-16 12:46:36 -0500
